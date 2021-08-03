@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> About Me</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="{% static 'home/about.css' %}" rel='stylesheet'>
+    <meta charset="utf-8" />
+    <style>
+        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat"}
+        * {
+         box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href= "/home">
+        <img src= "{% static 'TerminalLogo.jpg' %}" alt="PSE Terminal API"
+        width='60', height='60'> 
+        </a>
+        <a id='nameplate' href="/home"> PSE Terminal </a>
+        <div class="header-right">
+          <a id= 'navibar' href="/home">Home</a>
+          <a id= 'navibar' href="/home/chart">Chart</a>
+          <a class="active" id= 'navibar' href="/home/about">About</a>
+        </div>
+    </header>
+    
+    <input type="checkbox" name="toggle" id="toggle" />
+    <label for="toggle"></label>
+
+    <div class="container">  
+        <h1>PSE Terminal is a personal project and is not affiliated with the Philippine Stock Exchange.</h1>
+        <h2>  Though the data is taken from the PSE API, I can not fully guarantee that the info displayed is accurate. Thus, the website is not liable for any losses that may result from any data you see from the tool. </h2>    
+    </div>
+    <div class="message">
+        <h1> About Me </h1>
+        <h2> I am currently an undergraduate CS students in the Philippines. </h2>
+        <h1> Project </h1>
+        <h2> Framework :  Django, HTML, CSS </h2>
+        <h2> Language :  Python, Javascript </h2>
+        <h1> Contacts </h1>
+        <h3> Email - guiaomikhail@gmail.com </h3>
+        <h3> <a id = 'links' href = https://github.com/Cytical> Github </a> </h3>
+        <h3> <a id = 'links' href = https://www.linkedin.com/in/ezra-guiao> Linkedin </a> </h3>
+        <h3> <a id = 'links' href>  Website  </a> </h3>
+    </div>
+
+</div>
+</body>
+</html>

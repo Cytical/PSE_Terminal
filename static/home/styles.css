@@ -1,0 +1,426 @@
+body {
+    margin: 0px;
+}
+
+img {
+    border-radius: 8px;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+
+}
+
+#nameplate {
+    font:200%;
+    font-weight: 900;
+    vertical-align: text-bottom;
+}
+
+#navibar {
+    margin-top:15px;
+}
+.header {
+    overflow: hidden;
+    background-color: #14213D;
+    padding: 30px 10px, 5px, 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.header a {
+    color: #FCA311;
+    text-align: center;
+    font-size: 30px; 
+    border-radius: 4px;
+    padding-top: 20px;
+    vertical-align: text-bottom;
+    transition: 0.3s;
+}
+
+
+.header a:hover {
+    background-color: #FCA311;
+    color: black;
+}
+
+.header a.active {
+    background-color: #FCA311;
+    color: black;
+}
+
+.header-right {
+    float: right;
+    padding-right:50px;
+
+}
+
+#content a:hover {
+    background-color: #FCA311;
+    color: black;
+}
+
+div {
+    float: left;
+}
+
+
+#search_menu {
+    background: #28427B;
+    color: #FCA311;
+    height: 220vh;
+    width: 20%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    direction: rtl;
+    scrollbar-width: 5px;
+}
+
+#ticker_symbol {
+    background: white;
+    width: 40%;
+    padding-left: 3%;
+    padding-top: 40px;
+    font-weight: bold;
+    font-size: 300%;
+}
+
+#closing_price{
+    background: white;
+    width: 40%;
+    text-align: right;
+    padding-right: 5%;
+    padding-top: 40px;
+    font-weight: bold;
+    font-size: 300%;
+}
+
+#company_name {
+    background: white;
+    width: 40%;
+    padding-left: 3%;
+}
+
+#pctpositive {
+    width: 28%;
+    background: white;
+    padding-right: 1%;
+    text-align: right;
+    font-size: 125%;
+    color: green;
+}
+
+#pctnegative {
+    width: 28%;
+    background: white;
+    padding-right: 1%;
+    text-align: right;
+    font-size: 125%;
+    color: red;
+}
+
+#changepositive {
+    background: white;
+    width: 12%;
+    padding-right: 5%;
+    text-align: right;
+    font-size: 125%;
+    color: green;
+}
+
+#changenegative {
+    background: white;
+    width: 12%;
+    padding-right: 5%;
+    text-align: right;
+    font-size: 125%;
+    color: red;
+}
+
+#date {
+    background: white;
+    width: 80%;
+    text-align: right;
+    padding-bottom: 5%;
+    padding-top: 10px;
+    padding-right: 5%;
+}
+#desc {
+    width:80%;
+    margin-top: 70px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    line-height: 2;
+}
+#more {
+    display: none;
+}
+#filler {
+    width: 10%;
+}
+#open {
+    background: white;
+    width: 15%;
+    text-align: center;
+    padding-left: 5%;
+    font-size: 150%;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 18px #888888;
+}
+#close {
+    background: white;
+    width: 15%;
+    text-align: center;
+    font-size: 150%;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 18px #888888;
+}
+#low {
+    background: white;
+    width: 15%;
+    text-align: center;
+    font-size: 150%;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 18px #888888;
+}
+#high {
+    background: white;
+    width: 15%;
+    text-align: center;
+    padding-right: 5%;
+    font-size: 150%;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.data {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    float: left;
+    text-align: center;
+    box-shadow: 5px 10px 18px #888888;
+}
+  
+.data td, .data th {
+border: 1px solid #ddd;
+padding: 8px;
+}
+
+.data tr:nth-child(even){background-color: #f2f2f2;}
+
+.data tr:hover {
+background-color: #FCA311;
+color: black;;
+}
+
+.data th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #04AA6D;
+color: white;
+}
+
+#overview {
+    width: 35%;
+    margin-top: 100px;
+    margin-left:3%;
+    margin-right: 2%;
+}
+#profile {
+    width: 35%;
+    margin-top: 100px;
+    margin-left:2%;
+    margin-right: 3%;
+}
+#financials {
+    width: 22%;
+    margin-top: 100px;
+    margin-left:3%;
+    margin-right: 2%;
+}
+#margins {
+    width: 22%;
+    margin-top: 100px;
+    margin-left:2%;
+    margin-right: 2%;
+}
+#return {
+    width: 22%;
+    margin-top: 100px;
+    margin-left:2%;
+    margin-right: 3%;
+}
+#h3{
+    font-size: 140%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#time{
+    width :80%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    #search_menu {
+      display: none;
+    }
+}
+
+
+
+#myInput {
+    background-image: url('https://www.w3schools.com/css/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    direction: ltr;
+}
+
+#myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid #14213D;
+    font-size: 16px;
+    direction: ltr;
+}
+
+#content td {
+    color: #FCA311;
+    text-align: center;
+}
+#myTable th {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+#myTable tr {
+    width :100px;
+    transition : 1s width;
+    transition-timing-function: ease;
+}
+
+#myTable tr:hover {
+    background-color: #FCA311;
+    color: black;
+    width: 200px;
+}
+
+#myTable #content {
+    border-radius: 50px;
+    border-top: 2px solid #14213D;
+}
+
+#indextable a:link, #indextable a:visited {
+    font-weight: 700;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:link, a:visited {
+    font-weight: 700;
+    color: #FCA311;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+  
+
+#myBtn {
+    background-color: #FCA311;
+    border: none;
+    color: black;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#indextable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+
+}
+
+#indexmenu {
+    height: 80vh;
+    margin-right: 2.5%;
+    margin-left: 6.5%;
+    margin-top: 5%;
+}
+#indexmenu2 {
+    height: 80vh;
+    margin-top: 5%;
+    margin-right: 6.5%;
+    margin-left: 2.5%;
+}
+
+#indextable th {
+    padding: 8px;
+    text-align: center;
+}
+#indextable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#indextable tr:nth-child(even){background-color: #f2f2f2;}
+
+#indextable tr:hover {
+    background-color: #FCA311;
+    color: black;
+}
+
+#indextable th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: center;
+background-color: #28427B;
+color: #FCA311;
+}
+
+#content tr:hover {
+    background-color: #FCA311;
+    color: black;
+}
+
+/* width */
+::-webkit-scrollbar {
+width: 10px;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}

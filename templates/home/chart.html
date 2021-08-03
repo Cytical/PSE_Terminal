@@ -1,0 +1,61 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Chart </title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="{% static 'home/chart.css' %}" rel='stylesheet'>
+    <meta charset="utf-8" />
+    <style>
+        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat"}
+        * {
+         box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href= "/home">
+        <img src= "{% static 'TerminalLogo.jpg' %}" alt="PSE Terminal API"
+        width='60', height='60'> 
+        </a>
+        <a id='nameplate' href="/home"> PSE Terminal </a>
+        <div class="header-right">
+          <a id= 'navibar' href="/home">Home</a>
+          <a class="active" id= 'navibar' href="/home/chart">Chart</a>
+          <a id= 'navibar' href="/home/about">About</a>
+        </div>
+    </header>
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_2f6cb"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/INDEX-PSEC/" rel="noopener" target="_blank"><span class="blue-text">PSEC Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "INDEX:PSEC",
+  "interval": "D",
+  "timezone": "Asia/Hong_Kong",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_side_toolbar": false,
+  "allow_symbol_change": true,
+  "details": true,
+  "container_id": "tradingview_2f6cb"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</body>
+</html>
+
+  

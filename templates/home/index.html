@@ -1,0 +1,71 @@
+{% extends "home/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <div id= 'desc'>    
+        <p> The PSE Composite Index, commonly known previously as the PHISIX and presently as the PSEi, is a stock market index of the Philippine Stock Exchange consisting of 30 companies. <span id="dots">...</span> 
+            <span id="more">As the PSE's only broad-base index, it is frequently seen as an indicator of the general state of the Philippine business climate, although its reliability as an indicator of the state of the broader Philippine economy has been put into question.
+            The stock exchange regularly revises the list, at least twice a year. The PSE Composite Index is always composed of 30 stocks. </span> </p>
+        <button onclick="readmore()" id="myBtn">Read more</button>
+    </div>
+    <div id='indexmenu'>
+        <table id="indextable">
+            <thead>
+            <tr id='indexheader'>
+                <th> Symbol</th>
+                <th> Company Name</th>
+            </tr>
+            </thead>
+            {% for key,value in pseindex1.items %}
+            <tr id= 'indexelements'>
+                <td><a href = "/home/{{key}}"> {{key}} </a></td>
+                <td><a href = "/home/{{key}}"> {{value}} </a></td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div id='indexmenu2'>
+        <table id="indextable">
+            <thead>
+            <tr id='indexheader'>
+                <th> Symbol</th>
+                <th> Company Name</th>
+            </tr>
+            </thead>
+            {% for key,value in pseindex2.items %}
+            <tr id= 'indexelements'>
+                <td><a href = "/home/{{key}}"> {{key}} </a></td>
+                <td><a href = "/home/{{key}}"> {{value}} </a></td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        </div>
+
+    <script>
+        $(document).ready(function(){
+          $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+        function readmore() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+            }
+            }
+    </script>
+{% endblock %}

@@ -1,0 +1,96 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+    
+    
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
+img {
+    border-radius: 8px;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+
+}
+
+.header {
+    overflow: hidden;
+    background-color: #14213D;
+    padding: 30px 10px, 5px, 10px;
+}
+
+.header a {
+    color: #FCA311;
+    text-align: center;
+    font-size: 30px; 
+    border-radius: 4px;
+    padding-top: 20px;
+    vertical-align: text-bottom;
+    transition: 0.3s;
+}
+
+
+.header a:hover {
+    background-color: #FCA311;
+    color: black;
+}
+
+.header-right a.active {
+    background-color: #FCA311;
+    color: black;
+}
+
+.header-right {
+    float: right;
+    padding-right:50px;
+
+}
+
+
+#nameplate {
+    font:200%;
+    font-weight: 900;
+    vertical-align: text-bottom;
+}
+
+#navibar {
+    margin-top:15px;
+}
+
+body {
+    margin: 0px;
+}
+
+.header a:link {
+    font-weight: 700;
+    color: #FCA311;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:link, a:visited {
+    text-align: center;
+    text-decoration: none;
+    color:#FCA311;
+}
+
+
+#tradingview_2f6cb {
+    height: 680px;
+}

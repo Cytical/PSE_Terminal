@@ -1,0 +1,58 @@
+{% extends "home/header.html" %}
+{% load static %}
+
+{% block main %}
+<body>
+    <div id= 'search_menu'>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search symbol or name" title="Search..">
+    <table id="myTable" class="table table-bordered table-striped">
+        <thead>
+        <tr id='table_header'>
+            <th> Symbol</th>
+            <th> Company Name</th>
+        </tr>
+        </thead>
+        {% for key,value in stockdict.items %}
+        <tr id='content'>
+            <td><a href = "/home/{{key}}"> {{key}} </a></td>
+            <td><a href = "/home/{{key}}"> {{value}} </a></td>
+        </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+    </div>
+    <div id = 'ticker_symbol'> {{symbol}} </div>
+    <div id = 'closing_price'> {{close}} </div>
+    <div id= 'company_name'> {{name}} </div>
+    {% if pctchange >= 0%}
+    <div id= 'pctpositive'> &#9650; {{pctchange}} %</div>
+    <div id= 'changepositive'> &#9650; {{change}} </div>
+    {% else %}
+    <div id= 'pctnegative'>  	&#9660; {{pctchange}} %</div>
+    <div id= 'changenegative'> 	&#9660; {{change}} </div>
+    {% endif %}
+    <div id= 'date'>Last updated: {{date}} </div>
+    <div id= 'filler'> &nbsp; </div>
+    <div id= 'open'> 
+        <h3> Open </h3>
+        {{open}} 
+    </div>
+    <div id= 'close'> 
+        <h3> Close </h3>
+        {{close}} 
+    </div>
+    <div id= 'low'> 
+        <h3> Low </h3>
+        {{low}} 
+    </div>
+    <div id= 'high'>
+        <h3> High </h3>
+        {{high}} 
+    </div>
+    <div id= 'filler'> &nbsp; </div>
+    {% block body %}
+    {% endblock %}
+</body>
+</html>
+{% endblock %}

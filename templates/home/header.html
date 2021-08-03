@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PSE Terminal</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+    <link href="{% static 'home/styles.css' %}" rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="utf-8" />
+    <style>
+        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat"}
+        * {
+         box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<header class="header">
+    <a href= "/home">
+    <img src= "{% static 'TerminalLogo.jpg' %}" alt="PSE Terminal API"
+    width='60', height='60'> 
+    </a>
+    <a id='nameplate' href="/home"> PSE Terminal </a>
+    <div class="header-right">
+    <a class="active" id= 'navibar' href="/home">Home</a>
+    <a id= 'navibar' href="/home/chart">Chart</a>
+    <a id= 'navibar' href="/home/about">About</a>
+    </div>
+</header>
+{% block main %}
+{% endblock %}
