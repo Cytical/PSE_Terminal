@@ -9,9 +9,5 @@ Home Page
 
 Tradingview Chart
 
-![terminal about](https://user-images.githubusercontent.com/65214402/128023824-2bb10f95-29e0-4c4e-9ef8-44b1fd1b8076.png)
-
-About me Page
-
 ![terminal chart](https://user-images.githubusercontent.com/65214402/128023831-81623224-2aa0-45ea-94b6-969cd6d30a3b.png)
 
